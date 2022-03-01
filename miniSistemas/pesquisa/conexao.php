@@ -2,7 +2,7 @@
  
 // Cria a conexão com o banco de dados
 try {
-    $connection = new PDO("sqlsrv:server=192.168.1.20,1433; Database=SisplusGestao", "jose", "123");
+    $connection = new PDO("sqlsrv:server=; Database=SisplusGestao", "", "");
     $statement = $connection->prepare("SELECT * FROM dbo.FaturaTaxasUnimed;");
 
     $statement->execute();
